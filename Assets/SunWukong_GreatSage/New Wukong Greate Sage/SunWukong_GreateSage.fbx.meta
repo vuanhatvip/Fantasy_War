@@ -1,0 +1,216 @@
+fileFormatVersion: 2
+guid: 16f0ca1c150dce3418ef1757330c3d7d
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fbx Default Material 15
+    second: {fileID: 2100000, guid: 348135769a8cfa948820813fb3c91c63, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fbx Default Material 6
+    second: {fileID: 2100000, guid: 99536c95b182a0d46bdb7b3cd98af842, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fbx Default Material 7
+    second: {fileID: 2100000, guid: 87ac134f2cfde4440a999cae251e007f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fbx Default Material 9
+    second: {fileID: 2100000, guid: b2d86170b46244c44a25679426d7c3ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Wukong_Default_Eyes
+    second: {fileID: 2100000, guid: be97d73a6c6a3a444ab38d42021199a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_EyelashMaster_Inst
+    second: {fileID: 2100000, guid: dca3a2cbc744c034c929d69cec004c64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_M_Wukong_GreatSage_M_Eye_Occlusion_712AA792429A8C3A68_8ab4d6a
+    second: {fileID: 2100000, guid: ec522ae61dc1bf64da9a1364e187bae4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_M_Wukong_GreatSage_M_TearDuct_2_712AA792429A8C3A68E7F_2351215
+    second: {fileID: 2100000, guid: cba29f01f0588714a963b9ed42f9c474, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_M_Wukong_GreatSage_M_Wukong_Greatsage_Arm_712AA792429_94dcb27
+    second: {fileID: 2100000, guid: 2fb7b93ce4eb1494baafe5325a3136dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_M_Wukong_GreatSage_M_Wukong_Greatsage_LowerFabric_712_5265765
+    second: {fileID: 2100000, guid: d2831c37588c5264895008e74327fdbd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_M_Wukong_GreatSage_M_Wukong_Greatsage_Lower_2_712AA79_8bd5b88
+    second: {fileID: 2100000, guid: 1f33403166bb6f245abf639732cec49c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_M_Wukong_GreatSage_M_Wukong_Greatsage_SimHair_712AA79_fad641f
+    second: {fileID: 2100000, guid: 4cfadef4ae40a1b43b78743f4d8bc4f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Mouth_MId_color
+    second: {fileID: 2100000, guid: ae91b3c94dac5cc46b234f0b459814b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Wukong_Face
+    second: {fileID: 2100000, guid: 55746495ae396ca4bb563034a187206a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Wukong_Greatsage_Arm
+    second: {fileID: 2100000, guid: e76d59500b2170846bc88af3471468f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Wukong_Greatsage_Fur
+    second: {fileID: 2100000, guid: 57094ec92018e4444a940aea7330a0ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Wukong_Greatsage_LowerFabric
+    second: {fileID: 2100000, guid: c0e0f8deb87030c4fa802a45163e141c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Wukong_Greatsage_Lower_2
+    second: {fileID: 2100000, guid: 08563dd5369754c4b86e9153ad3178e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Wukong_Greatsage_SimHair
+    second: {fileID: 2100000, guid: dfbdc7a8dbc34664ab22726e7da0ae57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Wukong_Greatsage_Torso
+    second: {fileID: 2100000, guid: 0a5cde72d58c2e24f972a1a98a6fd9de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Wukong_Greatsage_Weapon
+    second: {fileID: 2100000, guid: f2a593d8948f7a4459710c3f7617bea4, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.125
+    - 0.0625
+    - 0.03125
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

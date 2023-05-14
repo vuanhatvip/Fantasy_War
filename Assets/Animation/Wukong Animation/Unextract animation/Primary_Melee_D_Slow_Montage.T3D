@@ -1,0 +1,25 @@
+Begin Object Class=/Script/Engine.AnimMontage Name="Primary_Melee_D_Slow_Montage"
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfo Name="SceneThumbnailInfo_0"
+   End Object
+   Begin Object Class=/Script/Engine.AnimDataModel Name="AnimationDataModel"
+   End Object
+   Begin Object Name="SceneThumbnailInfo_0"
+   End Object
+   Begin Object Name="AnimationDataModel"
+      PlayLength=1.333333
+      FrameRate=(Numerator=30)
+      NumberOfFrames=40
+      NumberOfKeys=41
+   End Object
+   BlendIn=(BlendTime=0.010000)
+   BlendOut=(BlendTime=0.200000)
+   CompositeSections(0)=(SectionName="Default",LinkedMontage=/Script/Engine.AnimMontage'"Primary_Melee_D_Slow_Montage"',SegmentIndex=0,SegmentLength=1.333333,LinkedSequence=/Script/Engine.AnimSequence'"/Game/ParagonSunWukong/Characters/Heroes/Wukong/Animations/Primary_Melee_D_Slow.Primary_Melee_D_Slow"')
+   SlotAnimTracks(0)=(SlotName="UpperBody",AnimTrack=(AnimSegments=((AnimReference=/Script/Engine.AnimSequence'"/Game/ParagonSunWukong/Characters/Heroes/Wukong/Animations/Primary_Melee_D_Slow.Primary_Melee_D_Slow"',AnimEndTime=1.333333))))
+   Notifies(0)=(NotifyName="SaveAttack",Guid=866F02F4478877DD2A7F9C89618F57B7,LinkedMontage=/Script/Engine.AnimMontage'"Primary_Melee_D_Slow_Montage"',SegmentIndex=0,SegmentLength=1.333333,LinkValue=0.962941,LinkedSequence=/Script/Engine.AnimSequence'"/Game/ParagonSunWukong/Characters/Heroes/Wukong/Animations/Primary_Melee_D_Slow.Primary_Melee_D_Slow"')
+   Notifies(1)=(EndTriggerTimeOffset=0.000100,NotifyName="ResetCombo",Guid=6E3FA04942F319ED246C7E8E78D7ACFB,LinkedMontage=/Script/Engine.AnimMontage'"Primary_Melee_D_Slow_Montage"',SegmentIndex=0,SegmentLength=1.333333,LinkValue=1.230769,LinkedSequence=/Script/Engine.AnimSequence'"/Game/ParagonSunWukong/Characters/Heroes/Wukong/Animations/Primary_Melee_D_Slow.Primary_Melee_D_Slow"')
+   SequenceLength=1.333333
+   AnimNotifyTracks(0)=(TrackName="1",TrackColor=(R=0.500000,G=0.500000,B=0.500000,A=1.000000))
+   DataModel=/Script/Engine.AnimDataModel'"AnimationDataModel"'
+   Skeleton=/Script/Engine.Skeleton'"/Game/ParagonSunWukong/Characters/Heroes/Wukong/Meshes/Wukong_Skeleton.Wukong_Skeleton"'
+   ThumbnailInfo=/Script/UnrealEd.SceneThumbnailInfo'"SceneThumbnailInfo_0"'
+End Object

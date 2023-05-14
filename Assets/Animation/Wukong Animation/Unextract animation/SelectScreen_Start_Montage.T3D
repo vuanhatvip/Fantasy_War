@@ -1,0 +1,27 @@
+Begin Object Class=/Script/Engine.AnimMontage Name="SelectScreen_Start_Montage"
+   Begin Object Class=/Script/Engine.AnimNotify_PlayParticleEffect Name="AnimNotify_PlayParticleEffect_0"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfo Name="SceneThumbnailInfo_0"
+   End Object
+   Begin Object Class=/Script/Engine.AnimDataModel Name="AnimationDataModel"
+   End Object
+   Begin Object Name="AnimNotify_PlayParticleEffect_0"
+      SocketName="FX_Heart_Emote"
+   End Object
+   Begin Object Name="SceneThumbnailInfo_0"
+   End Object
+   Begin Object Name="AnimationDataModel"
+      PlayLength=4.833333
+      FrameRate=(Numerator=30)
+      NumberOfFrames=145
+      NumberOfKeys=146
+   End Object
+   CompositeSections(0)=(SectionName="Default",LinkedMontage=/Script/Engine.AnimMontage'"SelectScreen_Start_Montage"',SegmentIndex=0,SegmentLength=4.833333,LinkedSequence=/Script/Engine.AnimSequence'"/Game/ParagonSunWukong/Characters/Heroes/Wukong/Animations/SelectScreen_Start.SelectScreen_Start"')
+   SlotAnimTracks(0)=(SlotName="UpperBody",AnimTrack=(AnimSegments=((AnimReference=/Script/Engine.AnimSequence'"/Game/ParagonSunWukong/Characters/Heroes/Wukong/Animations/SelectScreen_Start.SelectScreen_Start"',AnimEndTime=4.833333))))
+   Notifies(0)=(NotifyName="PlayParticleEffect",Notify=/Script/Engine.AnimNotify_PlayParticleEffect'"AnimNotify_PlayParticleEffect_0"',EndLink=(LinkValue=2.352852),Guid=3C026D3642885644679F9D8C4ED928DC,LinkedMontage=/Script/Engine.AnimMontage'"SelectScreen_Start_Montage"',SegmentIndex=0,SegmentLength=4.833333,LinkValue=2.352852,LinkedSequence=/Script/Engine.AnimSequence'"/Game/ParagonSunWukong/Characters/Heroes/Wukong/Animations/SelectScreen_Start.SelectScreen_Start"')
+   SequenceLength=4.833333
+   AnimNotifyTracks(0)=(TrackName="1",TrackColor=(R=0.500000,G=0.500000,B=0.500000,A=1.000000))
+   DataModel=/Script/Engine.AnimDataModel'"AnimationDataModel"'
+   Skeleton=/Script/Engine.Skeleton'"/Game/ParagonSunWukong/Characters/Heroes/Wukong/Meshes/Wukong_Skeleton.Wukong_Skeleton"'
+   ThumbnailInfo=/Script/UnrealEd.SceneThumbnailInfo'"SceneThumbnailInfo_0"'
+End Object
