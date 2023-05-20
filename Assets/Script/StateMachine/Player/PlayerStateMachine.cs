@@ -26,6 +26,13 @@ public class PlayerStateMachine : StateMachine
     }
 
     [field: SerializeField]
+    public Targeter Targeter
+    {
+        get;
+        private set;
+    }
+
+    [field: SerializeField]
     public float FreeLookMovementSpeed
     {
         get;
@@ -33,7 +40,21 @@ public class PlayerStateMachine : StateMachine
     }
 
     [field: SerializeField]
+    public float TargetingMovementSpeed
+    {
+        get;
+        private set;
+    }
+
+    [field: SerializeField]
     public float RotationDamping
+    {
+        get;
+        private set;
+    }
+
+    [field: SerializeField]
+    public ForceReceiver ForceReceiver
     {
         get;
         private set;
@@ -48,7 +69,6 @@ public class PlayerStateMachine : StateMachine
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(Camera.main);
         MainCameraTransform = Camera.main.transform;
 
         SwitchState(new PlayerFreeLookState(this));

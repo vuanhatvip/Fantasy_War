@@ -4,34 +4,40 @@ using UnityEngine;
 
 public class PlayerFreeLookState : PlayerBaseState
 {
-    private readonly int freeLookSpeedHash = Animator.StringToHash("FreeLookSpeed");
+    private readonly int FreeLookBlendTreeHash = Animator.StringToHash("FreeLookBlendTree");
+
+    private readonly int FreeLookSpeedHash = Animator.StringToHash("FreeLookSpeed");
+    
     private const float AnimationDamptTime = 0.1f;
 
     public PlayerFreeLookState(PlayerStateMachine stateMachine): base(stateMachine) {}
 
     public override void Enter()
     {
-        Debug.Log("Enter ");
+        stateMachine.InputReader.TargetEvent += OnTarget;
+
+        stateMachine.Animator.Play(FreeLookBlendTreeHash);
     }
 
     public override void Exit()
     {
-        Debug.Log("Exit");
+        stateMachine.InputReader.TargetEvent -= OnTarget;
     }
 
     public override void Tick(float deltaTime)
     {
         Vector3 movement = CalculateMovement();
 
-        stateMachine.InputReader.transform.Translate(movement * deltaTime);
-        stateMachine.Controller.Move(movement * stateMachine.FreeLookMovementSpeed * deltaTime);
+        //stateMachine.InputReader.transform.Translate(movement * deltaTime);
+        //stateMachine.Controller.Move(movement * stateMachine.FreeLookMovementSpeed * deltaTime);
+        Move(movement * stateMachine.FreeLookMovementSpeed, deltaTime);
 
         if (stateMachine.InputReader.MovementValue == Vector2.zero)
         {
-            stateMachine.Animator.SetFloat(freeLookSpeedHash, 0, AnimationDamptTime, deltaTime);
+            stateMachine.Animator.SetFloat(FreeLookSpeedHash, 0, AnimationDamptTime, deltaTime);
             return;
         }
-        stateMachine.Animator.SetFloat(freeLookSpeedHash, 1, AnimationDamptTime, deltaTime);
+        stateMachine.Animator.SetFloat(FreeLookSpeedHash, 1, AnimationDamptTime, deltaTime);
         FaceMovementDirection(movement, deltaTime);
     }
 
@@ -62,5 +68,12 @@ public class PlayerFreeLookState : PlayerBaseState
         right.Normalize();
 
         return forward * stateMachine.InputReader.MovementValue.y + right * stateMachine.InputReader.MovementValue.x;
+    }
+
+    private void OnTarget()
+    {
+        if (!stateMachine.Targeter.SelectTarget()) { return; }
+
+        stateMachine.SwitchState(new PlayerTargetingState(stateMachine));
     }
 }
