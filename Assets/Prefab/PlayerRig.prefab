@@ -197,6 +197,26 @@ MonoBehaviour:
     m_ParentHash: 585382737
   - m_Hash: -479991077
     m_ParentHash: 756556552
+  - m_Hash: 168036699
+    m_ParentHash: -479991077
+  - m_Hash: -1529340015
+    m_ParentHash: -479991077
+  - m_Hash: -1546537139
+    m_ParentHash: -479991077
+  - m_Hash: 1089459357
+    m_ParentHash: -479991077
+  - m_Hash: 2032663476
+    m_ParentHash: -479991077
+  - m_Hash: 9298915
+    m_ParentHash: 756556552
+  - m_Hash: -2045144755
+    m_ParentHash: 756556552
+  - m_Hash: 1296384744
+    m_ParentHash: 756556552
+  - m_Hash: 1346400848
+    m_ParentHash: 756556552
+  - m_Hash: -1692622347
+    m_ParentHash: 756556552
 --- !u!1 &3735020238518859019
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,7 +241,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3735020238518859019}
-  m_LocalRotation: {x: 0.17842492, y: 0.000000016930127, z: -0.0000000030700196, w: 0.98395354}
+  m_LocalRotation: {x: 0.17842461, y: -0.0000000084651415, z: 0.0000000015350209, w: 0.9839536}
   m_LocalPosition: {x: -0.64645386, y: 0.6110172, z: -0.8221283}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -960,9 +980,41 @@ MonoBehaviour:
   <Controller>k__BackingField: {fileID: 6162539843377828588}
   <Animator>k__BackingField: {fileID: 6162539843377828589}
   <Targeter>k__BackingField: {fileID: 8620957704704937831}
-  <FreeLookMovementSpeed>k__BackingField: 3
+  <FreeLookMovementSpeed>k__BackingField: 4
+  <TargetingMovementSpeed>k__BackingField: 4
   <RotationDamping>k__BackingField: 10
   <ForceReceiver>k__BackingField: {fileID: 8076433916571550001}
+  <Attacks>k__BackingField:
+  - <AnimationName>k__BackingField: Primary_Melee_A_Slow
+    <TransitionDuration>k__BackingField: 0.1
+    <ComboStateIndex>k__BackingField: 1
+    <ComboAttackTime>k__BackingField: 0.72
+    <Force>k__BackingField: 0.04
+    <ForceTime>k__BackingField: 15
+  - <AnimationName>k__BackingField: Primary_Melee_B_Slow
+    <TransitionDuration>k__BackingField: 0.1
+    <ComboStateIndex>k__BackingField: 2
+    <ComboAttackTime>k__BackingField: 0.72
+    <Force>k__BackingField: 0.0266
+    <ForceTime>k__BackingField: 15
+  - <AnimationName>k__BackingField: Primary_Melee_C_Slow
+    <TransitionDuration>k__BackingField: 0.1
+    <ComboStateIndex>k__BackingField: 3
+    <ComboAttackTime>k__BackingField: 0.67
+    <Force>k__BackingField: 0.04
+    <ForceTime>k__BackingField: 15
+  - <AnimationName>k__BackingField: Primary_Melee_D_Slow
+    <TransitionDuration>k__BackingField: 0.1
+    <ComboStateIndex>k__BackingField: 4
+    <ComboAttackTime>k__BackingField: 0.72
+    <Force>k__BackingField: 0.0333
+    <ForceTime>k__BackingField: 20
+  - <AnimationName>k__BackingField: Primary_Melee_E_Slow
+    <TransitionDuration>k__BackingField: 0.1
+    <ComboStateIndex>k__BackingField: -1
+    <ComboAttackTime>k__BackingField: 0
+    <Force>k__BackingField: 0.0266
+    <ForceTime>k__BackingField: 10
 --- !u!114 &6162539843377828591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -986,13 +1038,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2.16
+  m_Height: 2
   m_Radius: 0.33
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.033
   m_MinMoveDistance: 0
-  m_Center: {x: 0, y: 1.08, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &8076433916571550001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1006,6 +1058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 6162539843377828588}
+  drag: 0.1
 --- !u!1 &6162539842440990315
 GameObject:
   m_ObjectHideFlags: 0
@@ -3027,7 +3080,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6162539842999607602}
-  m_LocalRotation: {x: 0.033441827, y: -0.01520688, z: 0.0005088895, w: 0.99932486}
+  m_LocalRotation: {x: 0.033441827, y: -0.015206914, z: 0.00050889066, w: 0.99932486}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6771,7 +6824,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6162539844053571445}
-  m_LocalRotation: {x: 0.076978624, y: -0.01517027, z: 0.0011713983, w: 0.99691665}
+  m_LocalRotation: {x: 0.076978624, y: -0.015170235, z: 0.0011713955, w: 0.99691665}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7421,7 +7474,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6874938251499309261}
   m_LocalRotation: {x: -0.13129176, y: 0.48749912, z: -0.07442983, w: 0.85998106}
-  m_LocalPosition: {x: 0.00000013765356, y: 0.000000834465, z: 4.2720017}
+  m_LocalPosition: {x: 0.000000068825535, y: -0.00000166893, z: 4.2720017}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
